@@ -530,7 +530,7 @@ services:
     # build:
     #   context: ../
     #   dockerfile: backend/Dockerfile
-    image: opencoze/opencoze:latest
+    image: craftslab/coze-studio:latest
     container_name: coze-server
     profiles: ['run-server']
     env_file: *env_file
