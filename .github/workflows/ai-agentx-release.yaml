@@ -45,9 +45,9 @@ jobs:
         run: cp backend/conf/model/template/model_template_gemini.yaml backend/conf/model/gemini.yaml
       - name: Copy .env file
         run: cd docker && cp .env.example .env
+      - name: Install Railway CLI
+        run: npm install -g railway
       - name: Deploy to Railway
-        uses: railwayapp/cli-action@v1
-        with:
-          command: up --service coze-studio
+        run: railway up --service coze-studio
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
