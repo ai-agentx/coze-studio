@@ -48,4 +48,4 @@ jobs:
       - name: Deploy to Railway
         run: npx @railway/cli up --service coze-studio
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_PROJECT_TOKEN }}
