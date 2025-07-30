@@ -1,8 +1,0 @@
-{
-    "setup": {
-        "command": "./scripts/setup_railway.sh"
-    },
-    "deploy": {
-        "dockerComposePath": "docker/docker-compose.yml"
-    }
-}

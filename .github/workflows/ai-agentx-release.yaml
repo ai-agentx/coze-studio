@@ -41,7 +41,3 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Deploy to Railway
-        run: npx @railway/cli up --service coze-studio --path-as-root .
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_PROJECT_TOKEN }}
